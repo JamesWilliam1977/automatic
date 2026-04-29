@@ -1,0 +1,581 @@
+# Instincts generated from https://github.com/JamesWilliam1977/automatic
+# Generated: 2026-04-29T05:14:26.590Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: automatic-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Commit Length
+
+## Action
+
+Keep commit messages concise (~30 characters)
+
+## Evidence
+
+- Average commit message length: 30 chars
+- Based on 100 commits
+
+---
+id: automatic-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: automatic-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: automatic-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: automatic-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: automatic-workflow-refactoring
+trigger: "when refactoring code"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Workflow Refactoring
+
+## Action
+
+Follow the refactoring workflow:
+1. Ensure tests pass before refactor
+2. Refactor code structure
+3. Verify tests still pass
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: src/**/*
+
+---
+id: automatic-workflow-add-or-update-reference-image
+trigger: "when doing add or update reference image"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Workflow Add Or Update Reference Image
+
+## Action
+
+Follow the add-or-update-reference-image workflow:
+1. Add new image file to models/Reference/
+2. Update html/reference.json with new entry
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: models/Reference/*.jpg, html/reference.json
+
+---
+id: automatic-workflow-update-changelog-and-related-code
+trigger: "when doing update changelog and related code"
+confidence: 0.75
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Workflow Update Changelog And Related Code
+
+## Action
+
+Follow the update-changelog-and-related-code workflow:
+1. Edit relevant code/configuration files
+2. Update CHANGELOG.md with description of the change
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~5x per month
+- Files: CHANGELOG.md
+
+---
+id: automatic-workflow-feature-or-bugfix-in-sdnq-module
+trigger: "when doing feature or bugfix in sdnq module"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Workflow Feature Or Bugfix In Sdnq Module
+
+## Action
+
+Follow the feature-or-bugfix-in-sdnq-module workflow:
+1. Edit multiple files in modules/sdnq/ (e.g., quantizer.py, dequantizer.py, loader.py, common.py, layers/...)
+2. Optionally update related files (modules/model_quant.py, modules/lora/lora_apply.py, modules/shared.py)
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: modules/sdnq/*.py, modules/sdnq/layers/**/*.py, modules/model_quant.py
+
+---
+id: automatic-workflow-update-installer-and-backend-support
+trigger: "when doing update installer and backend support"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Workflow Update Installer And Backend Support
+
+## Action
+
+Follow the update-installer-and-backend-support workflow:
+1. Edit installer.py
+2. Edit related backend files (e.g., modules/rocm.py, modules/ui.py)
+3. Optionally update CHANGELOG.md
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: installer.py, modules/rocm.py, modules/ui.py
+
+---
+id: automatic-workflow-enhance-xyz-script-features
+trigger: "when doing enhance xyz script features"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Workflow Enhance Xyz Script Features
+
+## Action
+
+Follow the enhance-xyz-script-features workflow:
+1. Edit scripts/xyz/xyz_grid_shared.py
+2. Edit scripts/xyz_grid.py
+3. Edit scripts/xyz_grid_on.py
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: scripts/xyz/xyz_grid_shared.py, scripts/xyz_grid.py, scripts/xyz_grid_on.py
+
+---
+id: automatic-workflow-gallery-js-enhancement
+trigger: "when doing gallery js enhancement"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/automatic
+---
+
+# Automatic Workflow Gallery Js Enhancement
+
+## Action
+
+Follow the gallery-js-enhancement workflow:
+1. Edit javascript/gallery.js
+2. Optionally edit javascript/indexdb.js
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: javascript/gallery.js, javascript/indexdb.js
+
+---
+id: automatic-naming-convention-files
+trigger: "When creating or renaming a file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Naming Convention Files
+
+## Action
+
+Use camelCase for file names
+
+## Evidence
+
+- Pattern in folderStructure: namingConventions.files = camelCase
+
+---
+id: automatic-naming-convention-functions
+trigger: "When defining a function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Naming Convention Functions
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in folderStructure: namingConventions.functions = camelCase
+
+---
+id: automatic-naming-convention-classes
+trigger: "When defining a class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Naming Convention Classes
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in folderStructure: namingConventions.classes = PascalCase
+
+---
+id: automatic-naming-convention-constants
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Naming Convention Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in folderStructure: namingConventions.constants = SCREAMING_SNAKE_CASE
+
+---
+id: automatic-import-style
+trigger: "When importing modules in Python"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in codeStyle: importStyle = relative
+
+---
+id: automatic-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle: exportStyle = named
+
+---
+id: automatic-error-handling
+trigger: "When handling errors in Python code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Error Handling
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- Pattern in errorHandling: style = try-catch
+
+---
+id: automatic-test-location
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Test Location
+
+## Action
+
+Place tests in a separate test directory
+
+## Evidence
+
+- Pattern in architecture: testLocation = separate
+
+---
+id: automatic-commit-format-freeform
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Commit Format Freeform
+
+## Action
+
+Use a freeform commit message without a required prefix
+
+## Evidence
+
+- Seen in commit: update changelog
+- Seen in commit: update mime-types
+- Pattern: commits.prefixes = []
+
+---
+id: automatic-commit-length-short
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Commit Length Short
+
+## Action
+
+Keep commit messages concise (around 30 characters on average)
+
+## Evidence
+
+- Pattern: commits.averageLength = 30
+- Seen in commit: update torch==2.9.1 for cuda
+
+---
+id: automatic-add-or-update-reference-image
+trigger: "When someone wants to add a new model cover or reference image"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Add Or Update Reference Image
+
+## Action
+
+Add new image to models/Reference/ and update html/reference.json
+
+## Evidence
+
+- Workflow: add-or-update-reference-image
+- Seen in commit: Photoroom PRX 1024 cover with metadata
+
+---
+id: automatic-update-changelog
+trigger: "When making a code or configuration change that should be reflected in the changelog"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Update Changelog
+
+## Action
+
+Update CHANGELOG.md with a description of the change
+
+## Evidence
+
+- Workflow: update-changelog-and-related-code
+- Seen in commit: update changelog
+
+---
+id: automatic-feature-or-bugfix-in-sdnq-module
+trigger: "When improving, fixing, or refactoring SDNQ quantization logic"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Feature Or Bugfix In Sdnq Module
+
+## Action
+
+Edit files in modules/sdnq/ and related quantization/model files
+
+## Evidence
+
+- Workflow: feature-or-bugfix-in-sdnq-module
+- Seen in commit: Refactor SDNQDequantizer
+
+---
+id: automatic-update-installer-and-backend-support
+trigger: "When updating backend dependencies or installation logic"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Update Installer And Backend Support
+
+## Action
+
+Edit installer.py and related backend files (modules/rocm.py, modules/ui.py), optionally update CHANGELOG.md
+
+## Evidence
+
+- Workflow: update-installer-and-backend-support
+- Seen in commit: ipex update to torch==2.9.1+xpu
+
+---
+id: automatic-enhance-xyz-script-features
+trigger: "When adding a feature or fixing a bug in the XYZ grid script"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Enhance Xyz Script Features
+
+## Action
+
+Edit scripts/xyz/xyz_grid_shared.py, scripts/xyz_grid.py, and scripts/xyz_grid_on.py
+
+## Evidence
+
+- Workflow: enhance-xyz-script-features
+
+---
+id: automatic-gallery-js-enhancement
+trigger: "When improving the gallery UI/UX or fixing frontend bugs"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/automatic
+---
+
+# Automatic Gallery Js Enhancement
+
+## Action
+
+Edit javascript/gallery.js and optionally javascript/indexdb.js
+
+## Evidence
+
+- Workflow: gallery-js-enhancement
+
